@@ -1,4 +1,4 @@
-def le_matriz() -> [[int]]:
+def le_matriz() -> [[]]:
     dim = input("Nº: ").split
     nlinha, ncoluna = int(dim[0]), int(dim[1])
     matriz = []

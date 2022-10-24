@@ -1,9 +1,15 @@
-a = [1, 2, 3], [4, 5, 6], [7, 8, 9]
-print(a)
-print("2° valor da 1º linha: ",a[0][1])
-print("linha 1: ", a[0])
-print("linha 2: ", a[1])
-print("linha 3: ", a[2])
+matriz = []
+colunas = int(input("Digite o número de colunas:"))
+linhas = int(input("Digite o número de linhas:"))
 
-print(a[1 ][1])
+for i in range(colunas):
+    matriz.append([i])
 
+for l in range(0,colunas):
+    for c in range(0,linhas):
+        matriz[l].append(int(input(f"Digite um valor para [{l},{c}]: ")))
+    
+for l in range(0,colunas):
+        for c in range(0,linhas):
+              print(f'[{matriz[l][c]:^5}]', end='')
+        print()
